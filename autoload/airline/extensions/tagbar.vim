@@ -15,8 +15,8 @@ let s:init=0
 function! airline#extensions#tagbar#get_status(...)
   let builder = airline#builder#new({ 'active': a:1 })
   call builder.add_section('airline_a', s:spc.'Tagbar'.s:spc)
-  call builder.add_section('airline_b', s:spc.a:2.s:spc)
-  call builder.add_section('airline_c', s:spc.a:3.s:spc)
+  call builder.add_section('airline_b', '')
+  call builder.add_section('airline_c', '')
   return builder.build()
 endfunction
 
